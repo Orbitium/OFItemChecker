@@ -15,8 +15,6 @@ public class CraftCheck implements Listener {
         if (OFItemChecker.checkOPPlayers && event.getWhoClicked().isOp())
             return;
 
-        System.out.println("test");
-
         for (ItemStack itemStack : event.getInventory().getContents()) {
             if (OFItemChecker.isItemBlocked(itemStack.getType())) {
                 itemStack.setAmount(0);
