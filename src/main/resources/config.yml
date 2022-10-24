@@ -1,0 +1,44 @@
+# Config for OFItemChecker
+
+check:
+  # If that config is true, players who have OP will be checked
+  checkOPPlayers: false
+
+  # Check player's inventory when be logged
+  playerLoginCheck: true
+
+  # Check player's inventory when player closes own inventory
+  playerInventoryCloseCheck: true
+
+  # Check player's ender chest when player closes ender chest
+  enderChestCheck: true
+
+  # Check closed shulkers:
+  shulkerCloseCheck: true
+
+  # Check closed chests
+  chestCloseCheck: true
+
+  # Check player when take an item from floor
+  playerPickupCheck: true
+
+  # Item drop check
+  checkItemDrop: true
+
+  # Block place check
+  checkBlockPlace: true
+
+  # Crafting check
+  checkCrafts: true
+
+messages:
+  # If you don't wanna take information about deleted items by logger, you can disable it
+  enabled: true
+  # [item] and [player_name] will be filled automatically
+  itemRemoveInfo: "The [item] removed from [player_name]'s inventory."
+
+# Please check here https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+# Don't forget use `,`
+blockedItemTypes: [
+  "BEDROCK"
+]

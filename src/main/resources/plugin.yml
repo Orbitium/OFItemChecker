@@ -1,0 +1,5 @@
+name: OFItemChecker
+version: '${project.version}'
+main: me.orbitium.OFItemChecker
+api-version: 1.19
+authors: [Orbit]
